@@ -345,7 +345,7 @@ body {
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-          grid-template-areas: ". content .";
+      grid-template-areas: ". content .";
 }
 
 .content-grid-item {
@@ -408,7 +408,7 @@ body {
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-          grid-template-areas: ". content .";
+      grid-template-areas: ". content .";
 }
 
 .content-grid-item {
@@ -425,7 +425,7 @@ body {
 }
 
 body {
-  background: lightgray;
+  background-color: lightgray;
 }
 
 .canvas-container {

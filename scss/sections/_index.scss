@@ -1,6 +1,17 @@
 /* =============
    Index Home
 ============= */
+#index{
+   a: link, a:visited{
+      color: var(--drakgreen);
+   }
+   a:hover, a:active{
+      color: var(--drakgreen);
+      text-decoration: none;
+
+   }
+}
+
 body {
    background-color: var(--MintCream);
 }
