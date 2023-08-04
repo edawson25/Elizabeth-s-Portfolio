@@ -351,6 +351,8 @@ body {
 .content-grid-item {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   background-color: lavender;
   grid-area: content;
 }
@@ -385,7 +387,7 @@ textarea {
     Navigation
 ============= */
 nav {
-  background-color: grey;
+  background-color: lavender;
 }
 
 /* =============
@@ -397,8 +399,25 @@ nav {
 /* =============
    Index
 ============= */
-body #index {
+body {
   background-color: var(--Plum);
+}
+
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". content .";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  background-color: lavender;
+  grid-area: content;
 }
 
 body {

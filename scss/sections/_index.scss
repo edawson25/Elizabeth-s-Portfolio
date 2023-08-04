@@ -1,6 +1,15 @@
 /* =============
    Index
 ============= */
-body #index{
+body {
    background-color: var(--Plum);
 }
+.content-grid{
+   display: grid; 
+   grid-template-columns:  16px auto 16px ;
+   grid-template-areas: ". content .";
+}
+.content-grid-item{
+   background-color: lavender; 
+   grid-area: content;
+}       
