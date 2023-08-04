@@ -5,10 +5,11 @@ body{
     background-color: var(black); 
 }
 .content-grid{
-    display: grid; 16px auto 16px ;
+    display: grid; 
+    grid-template-columns:  16px auto 16px ;
     grid-template-areas: ". content .";
 }
 .content-grid-item{
     background-color: red; 
     grid-area: content;
-}
+}       
