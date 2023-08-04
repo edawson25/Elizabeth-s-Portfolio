@@ -3,12 +3,13 @@
 ============= */
 //slate blue / dark bluelink
 
-.slateBlueLink: link, slateBlueLink: visited {
-    color: var (--.slateblue) ;
+.darkslateBlueLink:link, .darkslateBlueLink:visited 
+{
+    color: var (--darkslateblue) ;
     text-decoration: none;
 }
-slateBlueLink: hover, slateBlueLink: active{
-    color: var(slateblue) ;
+.darkslateBlueLink: hover, .darkslateBlueLink: active{
+    color: var (--darkslateblue) ;
 
 }
 
