@@ -345,7 +345,7 @@ body {
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". content .";
+          grid-template-areas: ". content .";
 }
 
 .content-grid-item {
@@ -397,7 +397,7 @@ nav {
     Footer
 ============= */
 /* =============
-   Index
+   Index Home
 ============= */
 body {
   background-color: var(--MintCream);
@@ -408,7 +408,7 @@ body {
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". content .";
+          grid-template-areas: ". content .";
 }
 
 .content-grid-item {
@@ -424,9 +424,6 @@ body {
   background-color: lavender;
 }
 
-/* =============
-   Homepage
-============= */
 body {
   background: lightgray;
 }
