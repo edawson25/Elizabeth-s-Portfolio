@@ -337,7 +337,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(grey);
+  background-color: var(--MintCream);
 }
 
 .content-grid {
@@ -400,7 +400,7 @@ nav {
    Index
 ============= */
 body {
-  background-color: var(--Plum);
+  background-color: var(--MintCream);
 }
 
 .content-grid {
