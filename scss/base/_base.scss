@@ -2,7 +2,7 @@
     Base
 ============= */
 body{
-    background-color: var(black); 
+    background-color: var(grey); 
 }
 .content-grid{
     display: grid; 
@@ -10,6 +10,7 @@ body{
     grid-template-areas: ". content .";
 }
 .content-grid-item{
-    background-color: red; 
+    background-color: lavender; 
     grid-area: content;
 }       
+

@@ -1,0 +1,18 @@
+body {
+    background: lightgray;
+}
+
+.canvas-container {
+    margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 0.5in;
+    width: 8.5in;
+    height: 11in;
+    background-color: white;
+    box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+} 
+.multicolumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
