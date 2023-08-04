@@ -357,6 +357,15 @@ body {
   grid-area: content;
 }
 
+#main-content-right #index-left a:link, #main-content-right #index-left a:visited {
+  color: darkslateblue;
+  text-decoration: none;
+}
+#main-content-right #index-left a:hover, #main-content-right #index-left a:active {
+  color: red;
+  text-decoration: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -399,6 +408,15 @@ nav {
 /* =============
    Index Home
 ============= */
+#index-left a:link, #index-left a:visited {
+  color: darkslateblue;
+  text-decoration: none;
+}
+#index-left a:hover, #index-left a:active {
+  color: red;
+  text-decoration: none;
+}
+
 body {
   background-color: var(--MintCream);
 }

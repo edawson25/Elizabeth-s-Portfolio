@@ -1,13 +1,14 @@
 /* =============
    Index Home
 ============= */
-#index{
-   a: link, a:visited{
-      color: var(--drakgreen);
+#index-left{
+   a:link, a:visited {
+      color: var(darkslateblue);
+      text-decoration: none;
    }
    a:hover, a:active{
-      color: var(--drakgreen);
-      text-decoration: none;
+      color: var(darkBlue);
+      
 
    }
 }
