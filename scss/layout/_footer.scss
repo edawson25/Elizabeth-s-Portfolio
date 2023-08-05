@@ -1,45 +1,19 @@
 /* =============
     Footer
 ============= */
-.footer{
-    position: fixed;
-    bottom:0;
-    left:0;
-    left:0;
-    width:100%;
-    height: 90px;
-    background-color:blue; 
-
-    @include md{
-        display: grid;
-        grid-template-column: 50% auto;
-        grid-template-areas:
-        "fl fr"
-        "fb fb"
-    }
-    .footer-text-left {
-        font-size: 25px;
-        padding-leftL 40px;
-        float:left;
-        word-spacing:20px;
-    }
-    a.menu:hover{
-        background-color:yellow;
-        font-size 20px;
-    }
-    #footer-left {
-        @include md{
-            grid-area: fl;
-        }
-    }
-   
-    #footer-right {
-
-        @include md{
-            grid-area: fr;
-        }
-    }
-
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
 
     #footer-bottom {
         background-color: var(--lavender);
@@ -57,4 +31,4 @@
         }
   
      }
-}
+

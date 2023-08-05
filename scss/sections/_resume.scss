@@ -1,10 +1,21 @@
 /* =============
     resume
 ============= */
-body {
-    background-color: lightgrey;
-}
 
+.content-grid{
+    display: grid; 
+    grid-template-columns: 20px 20px 20px ;
+    grid-template-areas: ".. content ..";
+    
+ }
+ .content-grid-item{
+    background-color: lavendar; 
+    grid-area: content;
+ }   
+
+ body {
+    background-color: gainsboro;
+}
 .canvas-container {
     margin: 0 auto; 
     box-sizing: border-box;
