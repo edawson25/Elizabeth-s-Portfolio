@@ -1,27 +1,16 @@
 /* =============
    Index Home
 ============= */
-#index-left{
-   a:link, a:visited {
-      color: var(darkslateblue);
-      text-decoration: none;
-   }
-   a:hover, a:active{
-      color: var(darkBlue);
-      
 
-   }
-}
 
-body {
-   background-color: var(--MintCream);
-}
 .content-grid{
    display: grid; 
-   grid-template-columns:  16px auto 16px ;
-   grid-template-areas: ". content .";
+   grid-template-columns: 20px 20px 20px ;
+   grid-template-areas: ".. content ..";
+   
 }
 .content-grid-item{
-   background-color: lavender; 
+   background-color: lavendar; 
    grid-area: content;
-}       
+}   
+   

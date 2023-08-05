@@ -1,3 +1,16 @@
 /* =============
     Header
 ============= */
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  header{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: red;
+    color: #fff;
+  }
