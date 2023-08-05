@@ -11,4 +11,11 @@
     background-color: lavendar; 
     grid-area: content;
  }   
-
+ .grid-item {
+    height: 100x; 
+    display:grid; 
+    grid-template-columns: 25% 25% 25% 25%;
+ }
+#red {
+    background-color: red;
+}
