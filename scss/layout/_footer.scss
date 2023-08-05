@@ -1,4 +1,43 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: var(--MintCream); 
+    @include md{
+        display: grid;
+        grid-template-column: 50% auto;
+        grid-template-areas:
+        "fl fr"
+        "fb fb"
+    }
+    #footer-left{
+        @include md{
+            grid-area: fl;
+        }
+    }
+   
+    #footer-right{
 
+        @include md{
+            grid-area: fr;
+        }
+    }
+
+
+    #footer-bottom{
+        background-color: var(--lavender);
+    }
+        a:link, a:visited {
+        color: var (darkslateblue);
+        text-decoration: none;
+     }
+        a:hover, a:active{
+        color: darkslateblue ;
+        text-decoration: none;
+        
+        @include md{
+            grid-area: fr;
+        }
+  
+     }
+}
