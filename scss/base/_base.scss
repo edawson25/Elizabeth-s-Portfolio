@@ -18,11 +18,11 @@ body{
     .social-icons{
         li{
             a:link, a:visited {
-                color: var (darkslateblue);
+                color: var(darkslateblue);
                 text-decoration: none;
              }
-             a:hover, a:active{
-                color: darkslateblue ;
+             a:hover, a:active {
+                color:(darkslateblue);
                 text-decoration: none;
           
              }
