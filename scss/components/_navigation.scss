@@ -5,11 +5,19 @@
 
 .darkslateBlueLink:link, .darkslateBlueLink:visited 
 {
+<<<<<<< HEAD
     color: var(darkslateblue) ;
     text-decoration: none;
 }
 .darkslateBlueLink: hover, .darkslateBlueLink: active{
     color: var(darkslateblue) ;
+=======
+    color: var(--darkslateblue);
+    text-decoration: none;
+}
+.darkslateBlueLink: hover, .darkslateBlueLink: active{
+    color: var(--darkslateblue);
+>>>>>>> Portfoliobranch
 
 }
 

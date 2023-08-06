@@ -2,7 +2,7 @@
     Base
 ============= */
 body{
-    background-color: var(--MintCream); 
+    background-color: plum; 
 }
 
 .content-grid{
@@ -14,8 +14,9 @@ body{
     background-color: lavender; 
     grid-area: content;
 }       
- #main-content-right {
+#main-content-right {
     .social-icons{
+<<<<<<< HEAD
             li:link, li:visited {
                 color: var (darkslateblue);
                 text-decoration: none;
@@ -23,6 +24,16 @@ body{
              li:hover, li:active{
                 color: darkslateblue ;
                 text-decoration: none;
+=======
+        li{
+            a:link, a:visited {
+                color: var(--darkslateblue);
+                text-decoration: none;
+             }
+             a:hover, a:active {
+                color:(darkslateblue);
+                
+>>>>>>> Portfoliobranch
           
              }
         
