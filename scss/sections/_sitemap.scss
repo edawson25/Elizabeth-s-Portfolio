@@ -15,8 +15,8 @@ body {
 }
 .content-grid{
    display: grid; 
-   grid-template-columns:  16px auto 16px ;
-   grid-template-areas: ". content .";
+   grid-template-columns:  20px auto 20px ;
+   grid-template-areas: ".. content ..";
 }
 .content-grid-item{
    background-color: lavender; 
