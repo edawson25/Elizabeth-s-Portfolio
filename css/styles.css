@@ -13,11 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
-  --MintCream: #F5FFFA ;
   --lavender: #E6E6FA ;
   --darkSlateBlue: #483D8B ;
   --Gainsboro: #DCDCDC ;
-  --Plum: #DDA0DD ;
+  --Plum: #673147 ;
+  --midnightblue: var(--midnightblue); 
   
 }
 
