@@ -1,27 +1,87 @@
 /* =============
    Index Home
 ============= */
-#index-left{
-   a:link, a:visited {
-      color: var(darkslateblue);
-      text-decoration: none;
-   }
-   a:hover, a:active{
-      color: var(darkBlue);
-      
-
-   }
-}
-
+/* Add CSS styles for the grid layout */
 body {
-   background-color: var(--MintCream);
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.6;
+   margin: 0;
+   padding: 0;
+   color: #333;
 }
-.content-grid{
-   display: grid; 
-   grid-template-columns:  16px auto 16px ;
-   grid-template-areas: ". content .";
+
+header {
+   background-color: #f9f9f9;
+   padding: 10px 0;
 }
-.content-grid-item{
-   background-color: lavender; 
-   grid-area: content;
-}       
+
+nav {
+   display: flex;
+   justify-content: center;
+}
+
+nav a {
+   margin: 0 10px;
+   text-decoration: none;
+   color: #555;
+   font-size: 18px;
+}
+
+.content {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.content h2 {
+   color: #008080;
+}
+
+.content p {
+   margin-bottom: 20px;
+}
+
+.content img {
+   max-width: 100%;
+   border-radius: 5px;
+}
+
+.footer {
+   text-align: center;
+   background-color: #f9f9f9;
+   padding: 10px 0;
+   color: #777;
+}
+
+.footer a {
+   color: #555;
+}
+
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 30px; /* Add some spacing between grid items */
+    font-family: Arial, sans-serif;
+}
+content-grid-item {
+   background-color: #f5f5f5; /* Light gray background color */
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+Center the images inside the grid items */
+.content-grid-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Add rounded corners to the image */
+}
+
+/* Center the footer content */
+footer {
+    text-align: center;
+    margin-top: 30px; /* Add some space between content and footer */
+}

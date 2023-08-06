@@ -1,4 +1,34 @@
 /* =============
     Footer
 ============= */
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
+
+    #footer-bottom {
+        background-color: var(--lavender);
+    }
+        a:link, a:visited {
+        color: var (darkslateblue);
+        text-decoration: none;
+     }
+        a:hover, a:active{
+        color: darkslateblue ;
+        text-decoration: none;
+        
+        @include md{
+            grid-area: fr;
+        }
+  
+     }
 

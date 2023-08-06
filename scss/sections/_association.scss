@@ -1,3 +1,13 @@
-body{
-    background-color: lavender;
+/* =============
+   Association
+============= */
+.content-grid{
+   display: grid; 
+   grid-template-columns: 20px 20px 20px ;
+   grid-template-areas: ".. content ..";
+   
 }
+.content-grid-item{
+   background-color: lavendar; 
+   grid-area: content;
+}   

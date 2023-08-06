@@ -1,0 +1,31 @@
+/* =============
+   About
+============= */
+.content-grid{
+   display: grid; 
+   grid-template-columns: 16px auto 16px ;
+   grid-template-areas: ".. content ..";
+   
+}
+.content-grid-item{
+   background-color: lavendar; 
+   grid-area: content;
+}   
+
+.gallery {
+   display: flex;
+   justify-content: space-between; /* Adjust the spacing between thumbnails */
+}
+
+.thumbnail {
+   flex-basis: 30%; /* Set the width for each thumbnail (adjust as needed) */
+   overflow: hidden;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.thumbnail img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}

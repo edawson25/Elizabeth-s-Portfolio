@@ -8,7 +8,7 @@ body{
 .content-grid{
     display: grid; 
     grid-template-columns:  16px auto 16px ;
-    grid-template-areas: ". content .";
+    grid-template-areas: "content ";
 }
 .content-grid-item{
     background-color: lavender; 
@@ -16,16 +16,15 @@ body{
 }       
  #main-content-right {
     .social-icons{
-        li{
-            a:link, a:visited {
+            li:link, li:visited {
                 color: var (darkslateblue);
                 text-decoration: none;
              }
-             a:hover, a:active{
+             li:hover, li:active{
                 color: darkslateblue ;
                 text-decoration: none;
           
              }
-        }
+        
     }
 }
