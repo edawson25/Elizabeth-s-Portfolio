@@ -18,6 +18,7 @@ html {
   --darkSlateBlue: #483D8B ;
   --Gainsboro: #DCDCDC ;
   --Plum: #DDA0DD ;
+  
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,7 +338,7 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--MintCream);
+  background-color: green;
 }
 
 .content-grid {
@@ -345,7 +346,7 @@ body {
   display: grid;
   -ms-grid-columns: 16px auto 16px;
   grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". content .";
+      grid-template-areas: "content ";
 }
 
 .content-grid-item {
@@ -353,22 +354,35 @@ body {
   -ms-grid-column: 2;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-color: lavender;
   grid-area: content;
-}
-
-#main-content-right #index-left a:link, #main-content-right #index-left a:visited {
-  color: darkslateblue;
-  text-decoration: none;
-}
-#main-content-right #index-left a:hover, #main-content-right #index-left a:active {
-  color: red;
-  text-decoration: none;
 }
 
 /* =============
     Typography
 ============= */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -402,31 +416,84 @@ nav {
 /* =============
     Header
 ============= */
+article {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  background-color: red;
+  color: #fff;
+}
+
 /* =============
     Footer
 ============= */
-/* =============
-   Index Home
-============= */
-#index-left a:link, #index-left a:visited {
+article {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff;
+}
+
+#footer-bottom {
+  background-color: var(--lavender);
+}
+
+a:link, a:visited {
+  color: var darkslateblue;
+  text-decoration: none;
+}
+
+a:hover, a:active {
   color: darkslateblue;
   text-decoration: none;
 }
-#index-left a:hover, #index-left a:active {
-  color: red;
-  text-decoration: none;
+@media (min-width: 768px) {
+  a:hover, a:active {
+    grid-area: fr;
+  }
 }
 
-body {
-  background-color: var(--MintCream);
+footer {
+  background-color: red;
+}
+footer #footer-bottom {
+  background-color: var(garamond);
 }
 
+/* =============
+   Index Home
+============= */
 .content-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 16px auto 16px;
-  grid-template-columns: 16px auto 16px;
-      grid-template-areas: ". content .";
+  -ms-grid-columns: 20px 20px 20px;
+  grid-template-columns: 20px 20px 20px;
+      grid-template-areas: ".. content ..";
 }
 
 .content-grid-item {
@@ -434,34 +501,170 @@ body {
   -ms-grid-column: 2;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-color: lavender;
   grid-area: content;
 }
 
-body {
-  background-color: lavender;
-}
-
-body {
-  background-color: lightgray;
-}
-
-.canvas-container {
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0.5in;
-  width: 8.5in;
-  height: 11in;
-  background-color: white;
-  -webkit-box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
-}
-
-.multicolumn {
+/* =============
+   About
+============= */
+.content-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1rem 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  -ms-grid-columns: 20px auto 20px;
+  grid-template-columns: 20px auto 20px;
+      grid-template-areas: ".. content ..";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: lavender;
+  grid-area: content;
+}
+
+p {
+  color: red;
+}
+
+/* =============
+   Association
+============= */
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 20px 20px;
+  grid-template-columns: 20px 20px 20px;
+      grid-template-areas: ".. content ..";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: lavendar;
+  grid-area: content;
+}
+
+/* =============
+   contact
+============= */
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 20px 20px;
+  grid-template-columns: 20px 20px 20px;
+      grid-template-areas: ".. content ..";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: lavender;
+  grid-area: content;
+}
+
+/* =============
+   Projects
+============= */
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 20px 20px;
+  grid-template-columns: 20px 20px 20px;
+      grid-template-areas: ".. content ..";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: lavendar;
+  grid-area: content;
+}
+
+/* =============
+    resume
+============= */
+.content-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20px 20px 20px;
+  grid-template-columns: 20px 20px 20px;
+      grid-template-areas: ".. content ..";
+}
+
+.content-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  background-color: lavender;
+  grid-area: content;
 }
